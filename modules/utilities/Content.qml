@@ -18,8 +18,6 @@ Item {
         anchors.fill: parent
         spacing: Appearance.spacing.normal
 
-        IdleInhibit {}
-
         Record {
             props: root.props
             visibilities: root.visibilities
