@@ -163,11 +163,6 @@ Item {
         }
 
         NavItem {
-            icon: "settings_bluetooth"
-            label: "bluetooth"
-        }
-
-        NavItem {
             icon: "tune"
             label: "audio"
         }

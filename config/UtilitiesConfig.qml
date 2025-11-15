@@ -16,7 +16,6 @@ JsonObject {
     component Toasts: JsonObject {
         property bool configLoaded: true
         property bool chargingChanged: true
-        property bool gameModeChanged: true
         property bool dndChanged: true
         property bool audioOutputChanged: true
         property bool audioInputChanged: true
@@ -24,7 +23,6 @@ JsonObject {
         property bool numLockChanged: true
         property bool kbLayoutChanged: true
         property bool vpnChanged: true
-        property bool nowPlaying: false
     }
 
     component Vpn: JsonObject {

@@ -4,7 +4,6 @@ import qs.services
 import qs.config
 import qs.modules.controlcenter
 import Quickshell
-import Quickshell.Bluetooth
 import QtQuick
 import QtQuick.Layouts
 
@@ -42,16 +41,6 @@ StyledRect {
             }
 
             Toggle {
-                icon: "bluetooth"
-                checked: Bluetooth.defaultAdapter?.enabled ?? false
-                onClicked: {
-                    const adapter = Bluetooth.defaultAdapter;
-                    if (adapter)
-                        adapter.enabled = !adapter.enabled;
-                }
-            }
-
-            Toggle {
                 icon: "mic"
                 checked: !Audio.sourceMuted
                 onClicked: {
@@ -71,12 +60,6 @@ StyledRect {
                         screen: QsWindow.window?.screen ?? null
                     });
                 }
-            }
-
-            Toggle {
-                icon: "gamepad"
-                checked: GameMode.enabled
-                onClicked: GameMode.enabled = !GameMode.enabled
             }
 
             Toggle {

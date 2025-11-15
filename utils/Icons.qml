@@ -68,9 +68,6 @@ Singleton {
             Development: "code",
             IDE: "code",
             TextEditor: "edit_note",
-            Audio: "music_note",
-            Music: "music_note",
-            Player: "music_note",
             Recorder: "mic",
             Game: "sports_esports",
             FileTools: "files",
@@ -87,7 +84,6 @@ Singleton {
             Midi: "graphic_eq",
             Mixer: "graphic_eq",
             AudioVideoEditing: "video_settings",
-            AudioVideo: "music_video",
             Video: "videocam",
             Building: "construction",
             Graphics: "photo_library",
@@ -125,20 +121,6 @@ Singleton {
         if (strength >= 20)
             return "network_wifi_1_bar";
         return "signal_wifi_0_bar";
-    }
-
-    function getBluetoothIcon(icon: string): string {
-        if (icon.includes("headset") || icon.includes("headphones"))
-            return "headphones";
-        if (icon.includes("audio"))
-            return "speaker";
-        if (icon.includes("phone"))
-            return "smartphone";
-        if (icon.includes("mouse"))
-            return "mouse";
-        if (icon.includes("keyboard"))
-            return "keyboard";
-        return "bluetooth";
     }
 
     function getWeatherIcon(code: string): string {

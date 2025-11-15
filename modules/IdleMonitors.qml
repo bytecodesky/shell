@@ -11,7 +11,7 @@ Scope {
     id: root
 
     required property Lock lock
-    readonly property bool enabled: !Config.general.idle.inhibitWhenAudio || !Players.list.some(p => p.isPlaying)
+    readonly property bool enabled: true
 
     function handleIdleAction(action: var): void {
         if (!action)
