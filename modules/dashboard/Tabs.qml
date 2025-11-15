@@ -36,11 +36,6 @@ Item {
         }
 
         Tab {
-            iconName: "queue_music"
-            text: qsTr("Media")
-        }
-
-        Tab {
             iconName: "speed"
             text: qsTr("Performance")
         }

@@ -36,12 +36,7 @@ Item {
             sourceComponent: Network {}
         }
 
-        Popout {
-            name: "bluetooth"
-            sourceComponent: Bluetooth {
-                wrapper: root.wrapper
-            }
-        }
+
 
         Popout {
             name: "battery"
