@@ -1,6 +1,6 @@
 # Simplified Shell
 
-This is a simplified version of the Caelestia shell that removes all complex panels and features a minimalist top bar.
+This is a simplified version of the Caelestia shell that removes all complex panels and features a clean, minimalist top bar that appears on hover.
 
 ## What Changed
 
