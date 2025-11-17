@@ -1,0 +1,68 @@
+{
+    "appearance": {
+        "anim": {
+            "durations": {
+                "scale": 1
+            }
+        },
+        "font": {
+            "family": {
+                "clock": "Rubik",
+                "material": "Material Symbols Rounded",
+                "mono": "CaskaydiaCove NF",
+                "sans": "Rubik"
+            },
+            "size": {
+                "scale": 1
+            }
+        },
+        "padding": {
+            "scale": 1
+        },
+        "rounding": {
+            "scale": 1
+        },
+        "spacing": {
+            "scale": 1
+        },
+        "transparency": {
+            "enabled": true,
+            "base": 0.9,
+            "layers": 0.4
+        }
+    },
+    "background": {
+        "enabled": true,
+        "desktopClock": {
+            "enabled": false
+        },
+        "visualiser": {
+            "enabled": false,
+            "autoHide": true,
+            "blur": false,
+            "rounding": 1,
+            "spacing": 1
+        }
+    },
+    "bar": {
+        "persistent": false,
+        "workspaces": {
+            "shown": 5,
+            "perMonitorWorkspaces": true
+        },
+        "status": {
+            "showNetwork": true,
+            "showBattery": true
+        }
+    },
+    "border": {
+        "rounding": 25,
+        "thickness": 3
+    },
+    "services": {
+        "useTwelveHourClock": false
+    },
+    "paths": {
+        "wallpaperDir": "~/Pictures/Wallpapers"
+    }
+}

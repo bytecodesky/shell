@@ -53,43 +53,46 @@ The top bar includes:
 
 ## Configuration
 
-The bar respects these configuration options from `~/.config/caelestia/shell.json`:
+The bar respects these configuration options from `~/.config/caelestia/shell.json`.
+
+A minimal example configuration is provided in `config-example-simple.json`. To use it:
+
+```bash
+cp config-example-simple.json ~/.config/caelestia/shell.json
+```
+
+### Key Configuration Options
 
 ```json
 {
   "bar": {
+    "persistent": false,        // Set to true to keep bar always visible (no auto-hide)
     "workspaces": {
-      "shown": 5
+      "shown": 5,               // Number of workspaces to display
+      "perMonitorWorkspaces": true
     },
     "status": {
-      "showNetwork": true,
-      "showBattery": true
+      "showNetwork": true,      // Show/hide network icon
+      "showBattery": true       // Show/hide battery icon
     }
   },
   "services": {
-    "useTwelveHourClock": false
+    "useTwelveHourClock": false // Set to true for 12-hour time format
   },
   "border": {
-    "thickness": 10
+    "thickness": 3              // Border thickness at top in pixels
   },
   "background": {
-    "enabled": true
+    "enabled": true             // Set to false to disable wallpaper
+  },
+  "appearance": {
+    "transparency": {
+      "enabled": true,          // Enable/disable transparency
+      "base": 0.9               // Transparency level (0.0-1.0)
+    }
   }
 }
 ```
-
-### Making the Bar Persistent
-
-To make the bar always visible (no auto-hide), you can set:
-```json
-{
-  "bar": {
-    "persistent": true
-  }
-}
-```
-
-Note: The bar doesn't currently read this config directly, but you can modify the TopBar.qml file to set `barContent.persistent: true` if needed.
 
 ## Restoring Removed Features
 
