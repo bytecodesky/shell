@@ -4,11 +4,9 @@
 
 import "modules"
 import "modules/topbar"
-import "modules/background"
 import Quickshell
 
 ShellRoot {
-    Background {}
     TopBar {}
 
     SimpleShortcuts {}
