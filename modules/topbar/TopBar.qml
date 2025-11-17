@@ -53,7 +53,7 @@ Variants {
             StyledRect {
                 id: barContent
 
-                property bool persistent: false
+                readonly property bool persistent: Config.bar.persistent
                 readonly property bool shouldShow: persistent || win.hovered
 
                 anchors.top: border.bottom

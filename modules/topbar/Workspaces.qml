@@ -44,7 +44,7 @@ RowLayout {
             StyledText {
                 anchors.centerIn: parent
                 text: parent.workspaceId.toString()
-                size: Appearance.font.size.small
+                font.pointSize: Appearance.font.size.small
                 color: parent.isActive ? Colours.palette.m3onPrimary : Colours.palette.m3onSurface
             }
 
